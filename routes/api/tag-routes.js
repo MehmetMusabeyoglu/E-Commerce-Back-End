@@ -6,7 +6,7 @@ const { Tag, Product, ProductTag } = require('../../models');
 router.get('/', async (req, res) => {
   try {
     const getTag = await Tag.findAll({
-      include: [{ model: Product, through: ProductTag }] 
+      include: [{ model: Product, through: ProductTag }],
     });
     res.status(200).json(getTag);
   } catch (err) {
@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const getTagId = await Tag.findByPk(req.params.id, {
-      include: [{ model: Product, through: ProductTag }] 
+      include: [{ model: Product, through: ProductTag }], 
     });
     if(!getTagId){
       res.status(404).json({ message: 'No tag found with that id!' });
@@ -40,7 +40,7 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   try {
-    let putTagId = await Tag.update(req.body, {
+    const putTagId = await Tag.update(req.body, {
       where: {
         id: req.params.id,
       },
@@ -57,7 +57,7 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   try {
-    let deleteTagId = await Tag.destroy({
+    const deleteTagId = await Tag.destroy({
       where: {
         id: req.params.id,
       },

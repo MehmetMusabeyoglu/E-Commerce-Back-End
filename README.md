@@ -15,7 +15,7 @@
 
 ## Description
 
- This application has a back-end server for e-commerce site. Back-end part was created with Express.js, sequelize, and MySQL database. It allows to user to get all data by categories, tags, and products. It also allows getting a single item by its id. Users can delete, update, or create items for each route. 
+This application is the back-end server for an e-commerce site. Back-end part was created with Express.js, sequelize, and MySQL database. It allows the user to get all data by categories, tags, and products. It also allows getting a single item by its id. Users can delete, update, or create items for each route. 
 
 
 ## Usage Demonstration Link

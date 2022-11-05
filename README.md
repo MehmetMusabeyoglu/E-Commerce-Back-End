@@ -6,7 +6,7 @@
 * [Usage Demonstration Link](#usage-demonstration-link)
 * [User Story](#user-story)
 * [Screenshot](#screenshot)
-* [Code Snippet](#code-snippet)
+* [Code Snippets](#code-snippets)
 * [Technologies Used](#technologies-used)
 * [Credits](#credits)
 * [Author Links](#author-links)
@@ -15,7 +15,7 @@
 
 ## Description
 
- This application has a back-end server for e-commerce site. Back-end part created with Express.js, sequelize, and MySQL database. It allows to user to get all datas by categories, tags and products. Also get single item by it's id. User can delete, update, or create new item for each routes. 
+ This application has a back-end server for e-commerce site. Back-end part was created with Express.js, sequelize, and MySQL database. It allows to user to get all data by categories, tags, and products. It also allows getting a single item by its id. Users can delete, update, or create items for each route. 
 
 
 ## Usage Demonstration Link
@@ -37,7 +37,7 @@ Usage demonstration link is [here](https://drive.google.com/file/d/1ZlGHAnPZYmyk
 !["Insomnia"](./assets/Walkthrough%20Gif.gif)
 
 
-## Code Snippet
+## Code Snippets
 
 ### GET:
 ####  Function for getting single product based on it's id.
